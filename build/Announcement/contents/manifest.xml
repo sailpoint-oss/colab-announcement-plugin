@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Plugin displayName="Announcement" minSystemVersion="8.0" name="announcement" rightRequired="" version="1.0">
+  <Attributes>
+    <Map>
+      <entry key="minUpgradableVersion" value="0.1"/>
+      <entry key="settings">
+        <value>
+          <List>
+            <Setting dataType="string" helpText="What you want to announce?" label="Announcement" name="announcement" defaultValue="SailPoint will be on scheduled maintenance on 31/12/2023 from 6 PM to 11 PM for more details &lt;a href='https://www.google.com' target='_blank'>Check here&lt;/a>"/>
+            <Setting dataType="string" helpText="CSS style you want to apply" label="CSS Style" name="cssContent" defaultValue="color: black;position: absolute;font-size: 12px;font-weight: bold;"/>
+            <Setting dataType="boolean" helpText="Check if you wanna show anouncement in home page" label="Show in Home Page" name="showInHome" defaultValue="true"/>
+          </List>
+        </value>
+      </entry>
+      <entry key="snippets">
+        <value>
+          <List>
+            <Snippet regexPattern=".*home.jsf" rightRequired="">
+              <Scripts>
+                <String>ui/js/announcement.js</String>
+              </Scripts>
+            </Snippet>
+          </List>
+        </value>
+      </entry>
+    </Map>
+  </Attributes>
+</Plugin>
