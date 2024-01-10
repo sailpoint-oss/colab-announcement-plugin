@@ -4,16 +4,16 @@
 [![Contributor Shield][contributor-shield]][contributors-url]
 
 [discourse-shield]:https://img.shields.io/discourse/topics?label=Discuss%20This%20Tool&server=https%3A%2F%2Fdeveloper.sailpoint.com%2Fdiscuss
-[discourse-url]:https://developer.sailpoint.com/discuss/tag/workflows
-[issues-shield]:https://img.shields.io/github/issues/sailpoint-oss/repo-template?label=Issues
-[issues-url]:https://github.com/sailpoint-oss/repo-template/issues
-[release-shield]: https://img.shields.io/github/v/release/sailpoint-oss/repo-template?label=Current%20Release
-[release-url]:https://github.com/sailpoint-oss/repo-template/releases
-[contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/repo-template?label=Contributors
-[contributors-url]:https://github.com/sailpoint-oss/repo-template/graphs/contributors
+[discourse-url]:https://developer.sailpoint.com/discuss/t/announcement-plugin/23975
+[issues-shield]:https://img.shields.io/github/issues/sailpoint-oss/colab-announcement-plugin?label=Issues
+[issues-url]:https://github.com/sailpoint-oss/colab-announcement-plugin/issues
+[release-shield]: https://img.shields.io/github/v/release/sailpoint-oss/colab-announcement-plugin?label=Current%20Release
+[release-url]:https://github.com/sailpoint-oss/colab-announcement-plugin/releases
+[contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/colab-announcement-plugin?label=Contributors
+[contributors-url]:https://github.com/sailpoint-oss/colab-announcement-plugin/graphs/contributors
 
-# application-title-here
-[Explore the docs »](https://your-link-to-colab-topic-here)
+# Announcement Plugin
+[Explore the docs »](https://developer.sailpoint.com/discuss/t/announcement-plugin/23975)
 
 [New to the CoLab? Click here »](https://developer.sailpoint.com/discuss/t/about-the-sailpoint-developer-community-colab/11230)
 
@@ -38,4 +38,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Discuss
-[Click Here](https://developer.sailpoint.com/dicuss/tag/{tagName}) to discuss this tool with other users.
+[Click Here](https://developer.sailpoint.com/discuss/t/announcement-plugin/23975) to discuss this tool with other users.
