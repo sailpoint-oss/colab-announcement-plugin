@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Plugin displayName="Announcement" minSystemVersion="8.0" name="announcement" rightRequired="" version="1.0">
+<Plugin displayName="Announcement" minSystemVersion="8.0" name="announcement" rightRequired="" version="1.0.1">
   <Attributes>
     <Map>
       <entry key="minUpgradableVersion" value="0.1"/>

@@ -40,6 +40,9 @@ function announcementGetCookie(name) {
 
 async function announcementGetPluginId(pName, xxsrfToken) {
 	var base_URL = window.location.origin;
+	if(!window.location.pathname.split("/")[1].includes(".")) { //fixed base_URL for container deployment
+  		base_URL = base_URL + "/" + window.location.pathname.split("/")[1];
+	}
 	var plugins = new XMLHttpRequest();
 	plugins.withCredentials = true;
 	var prID = null;
@@ -61,6 +64,9 @@ async function announcementGetPluginId(pName, xxsrfToken) {
 
 async function announcementGetPluginSettings(pluginName) {
 	var base_URL = window.location.origin;
+	if(!window.location.pathname.split("/")[1].includes(".")) { //fixed base_URL for container deployment
+  		base_URL = base_URL + "/" + window.location.pathname.split("/")[1];
+	}
 	var csrfToken = announcementGetCookie('CSRF-TOKEN');
 	var settgs = null;
 	if(csrfToken) {
