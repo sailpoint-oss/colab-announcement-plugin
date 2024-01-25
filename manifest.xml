@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Plugin displayName="Announcement" minSystemVersion="8.0" name="announcement" rightRequired="" version="1.0.1">
+<Plugin displayName="Announcement" minSystemVersion="8.0" name="Announcement" rightRequired="" version="2.0">
   <Attributes>
     <Map>
       <entry key="minUpgradableVersion" value="0.1"/>
+      <entry key="restResources">
+       <value>
+         <List>
+           <String>dev.shandeep.announcementplugin.Configure</String>
+          </List>
+       </value>
+     </entry>
       <entry key="settings">
         <value>
           <List>
