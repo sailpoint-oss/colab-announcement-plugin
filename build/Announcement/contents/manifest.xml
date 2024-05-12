@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE Plugin PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Plugin displayName="Announcement" minSystemVersion="8.0" name="Announcement" rightRequired="" version="2.0">
+<Plugin displayName="Announcement" minSystemVersion="8.0" name="Announcement" rightRequired="" version="3.0">
   <Attributes>
     <Map>
-      <entry key="minUpgradableVersion" value="0.1"/>
+      <entry key="minUpgradableVersion" value="2.0"/>
       <entry key="restResources">
        <value>
          <List>
@@ -14,10 +14,52 @@
       <entry key="settings">
         <value>
           <List>
-            <Setting dataType="string" helpText="What you want to announce?" label="Announcement" name="announcement" defaultValue="SailPoint will be on scheduled maintenance on 31/12/2023 from 6 PM to 11 PM for more details &lt;a href='https://www.google.com' target='_blank'>Check here&lt;/a>"/>
-            <Setting dataType="string" helpText="CSS style you want to apply" label="CSS Style" name="cssContent" defaultValue="color: black;position: absolute;font-size: 12px;font-weight: bold;"/>
-            <Setting dataType="boolean" helpText="Check if you wanna show anouncement in home page" label="Show in Home Page" name="showInHome" defaultValue="true"/>
+            <Setting dataType="string" name="announcement" defaultValue="SailPoint will be on scheduled maintenance on 12/05/2024 from 6 PM to 11 PM for more details &lt;a href='https://www.google.com' target='_blank'>Check here&lt;/a>"/>
+            <Setting dataType="string" name="cssContent" defaultValue="color: black;font-size: 12px;font-weight: bold;position: absolute;"/>
+            <Setting dataType="boolean" name="showInHome" defaultValue="true"/>
+            <Setting dataType="string" name="animation" defaultValue="Right To Left"/>
+            <Setting dataType="boolean" name="fading" defaultValue="false"/>
+            <Setting dataType="boolean" name="pause" defaultValue="false"/>
           </List>
+        </value>
+      </entry>
+      <entry key="settingsForm">
+        <value>
+          <Form name="Announcement Configuration">
+            <Attributes>
+              <Map>
+                <entry key="pageTitle" value="Announcement Configuration"/>
+                <entry key="title" value="Announcement Configuration"/>
+              </Map>
+            </Attributes>
+            <Description>Form for configuring Announcement Plugin</Description>
+            <Section columns="2" name="Configuration">
+              <Attributes>
+                <Map>
+                  <entry key="subtitle" value="Configure below settings to alter the users experience."/>
+                </Map>
+              </Attributes>
+              <Field displayName="Announcement" helpKey="What you want to announce?" name="announcement" type="string"/>
+              <Field displayName="CSS Style" helpKey="CSS style you want to apply" name="cssContent" type="string"/>
+              <Field displayName="Show in Home Page" helpKey="Check if you wanna show anouncement in home page" name="showInHome" type="boolean"/>
+              <Field displayName="Animation" helpKey="Choose an animation style" name="animation" type="string" required="true">
+                <AllowedValuesDefinition>
+                  <Value>
+                    <List>
+                      <String>No Animation</String>
+                      <String>Right To Left</String>
+                      <String>Left To Right</String>
+                      <String>Top To Bottom</String>
+                      <String>Bottom To Top</String>
+                      <String>Bounce</String>
+                    </List>
+                  </Value>
+                </AllowedValuesDefinition>
+              </Field>
+              <Field displayName="Fade In And Out" helpKey="Check to enable fade in fade out animation" name="fading" type="boolean"/>
+              <Field displayName="Pause On Hover" helpKey="Check to pause any animation on mouse hover" name="pause" type="boolean"/>
+            </Section>
+          </Form>
         </value>
       </entry>
       <entry key="snippets">
@@ -27,6 +69,9 @@
               <Scripts>
                 <String>ui/js/announcement.js</String>
               </Scripts>
+              <StyleSheets>
+                <String>ui/css/announcement.css</String>
+              </StyleSheets>
             </Snippet>
           </List>
         </value>
