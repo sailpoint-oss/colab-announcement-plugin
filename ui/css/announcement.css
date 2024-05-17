@@ -1,6 +1,6 @@
 /*
 Project - Announcement
-Version - 3.0
+Version - 3.1
 Author - Shandeep - https://www.linkedin.com/in/shandeepsrinivas/
 */
 
@@ -101,24 +101,24 @@ Author - Shandeep - https://www.linkedin.com/in/shandeepsrinivas/
   100% { transform: translate(-100%, 0); }
 }
 
-.pauseOnHover:hover > p {
+.announcementPauseOnHover:hover > p {
   animation-play-state: paused;
 }
-.pauseOnHover:hover {
-  animation: unfade 2s linear;
+.announcementPauseOnHover:hover {
+  animation: announcementKfUnFade 2s linear;
 }
 
-.fade {
+.announcementFade {
   opacity: 1;
-  animation: fade 2s linear infinite;
+  animation: announcementKfFade 2s linear infinite;
 }
 
-@keyframes unfade {
+@keyframes announcementKfUnFade {
   0%,100% { opacity: 1 }
   50% { opacity: 1 }
 }
 
-@keyframes fade {
+@keyframes announcementKfFade {
   0%,100% { opacity: 0 }
   50% { opacity: 1 }
 }
