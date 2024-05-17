@@ -14,7 +14,7 @@ import javax.ws.rs.Produces;
 
 /**
  * The REST resource for generating the announcement text from settings.
- * Version - 3.0
+ * Version - 3.1
  * @author Shandeep Srinivas <https://shandeep.dev>
  */
 @Path("AnnouncementPlugin")
@@ -55,7 +55,7 @@ public class Configure extends BasePluginResource {
         if(showInHome) {
             //result = "<marquee style='" + cssContent + "'>" + announcement + "</marquee>";
             String animationClassName = animationClassMap.get(animation);
-            result = "<div class=\"" + animationClassName + (fading ? " fade" : "") + (pause ? " pauseOnHover" : "")  + "\" style=\"" + cssContent + "\"><p>" + announcement + "</p></div>";
+            result = "<div class=\"" + animationClassName + (fading ? " announcementFade" : "") + (pause ? " announcementPauseOnHover" : "")  + "\" style=\"" + cssContent + "\"><p>" + announcement + "</p></div>";
         }
         return result;
     }
